@@ -1,4 +1,4 @@
-Source: asterisk
+Source: asterisk-debug
 Priority: optional
 Section: comm
 Maintainer: Wazo Maintainers <dev@wazo.community>
@@ -58,12 +58,12 @@ Build-Depends:
  zlib1g-dev
 Standards-Version: 3.9.6
 
-Package: asterisk
+Package: asterisk-debug
 Architecture: any
 Section: comm
-Replaces: asterisk11
-Conflicts: asterisk11
-Provides: asterisk11
+Replaces: asterisk
+Conflicts: asterisk
+Provides: asterisk-virtual
 Depends: ${misc:Depends}, ${shlibs:Depends}, adduser, mpg123
 Breaks:
  wazo-res-amqp (<< 17.14~),
@@ -97,14 +97,14 @@ Description: Open Source Private Branch Exchange (PBX) - Wazo version
  .
   Homepage: http://www.asterisk.org.
 
-Package: asterisk-dbg
+Package: asterisk-debug-dbg
 Architecture: any
 Section: comm
 Priority: extra
-Replaces: asterisk11-dbg
-Conflicts: asterisk11-dbg
-Provides: asterisk11-dbg
-Depends: ${misc:Depends}, asterisk (= ${binary:Version})
+Replaces: asterisk-dbg
+Conflicts: asterisk-dbg
+Provides: asterisk-virtual-dbg
+Depends: ${misc:Depends}, asterisk-debug (= ${binary:Version})
 Description: Open Source Private Branch Exchange (PBX) - Wazo version
  Asterisk is an Open Source PBX and telephony toolkit.  It is, in a
  sense, middleware between Internet and telephony channels on the bottom,
@@ -132,10 +132,13 @@ Description: Open Source Private Branch Exchange (PBX) - Wazo version
  .
   Homepage: http://www.asterisk.org.
 
-Package: asterisk-dev
+Package: asterisk-debug-dev
 Architecture: all
-Recommends: asterisk
+Recommends: asterisk-debug
 Section: devel
+Replaces: asterisk-dev
+Conflicts: asterisk-dev
+Provides: asterisk-virtual-dev
 Depends: ${misc:Depends}
 Description: development files for asterisk
  Asterisk is an Open Source PBX and telephony toolkit.  It is, in a
@@ -165,10 +168,13 @@ Description: development files for asterisk
  .
   Homepage: http://www.asterisk.org.
 
-Package: asterisk-doc
+Package: asterisk-debug-doc
 Architecture: all
-Recommends: asterisk
+Recommends: asterisk-debug
 Section: doc
+Replaces: asterisk-doc
+Conflicts: asterisk-doc
+Provides: asterisk-virtual-doc
 Depends: ${misc:Depends}
 Description: Source code documentation for Asterisk
  Asterisk is an Open Source PBX and telephony toolkit.
@@ -198,10 +204,13 @@ Description: Source code documentation for Asterisk
  .
   Homepage: http://www.asterisk.org.
 
-Package: asterisk-sounds-main
+Package: asterisk-debug-sounds-main
 Architecture: all
-Enhances: asterisk
+Enhances: asterisk-debug
 Section: comm
+Replaces: asterisk-sounds-main
+Conflicts: asterisk-sounds-main
+Provides: asterisk-virtual-sounds-main
 Depends: ${misc:Depends}
 Description: sound files for asterisk
  Asterisk is an Open Source PBX and telephony toolkit.  It is, in a
