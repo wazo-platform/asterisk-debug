@@ -144,6 +144,11 @@ index abe3cd2..6de841b 100755
  	mkdir -p debian/$(cdbs_curpkg)/usr/share/asterisk
  	mv debian/tmp/var/lib/asterisk/documentation debian/$(cdbs_curpkg)/usr/share/asterisk/
  
+-build/asterisk-doc::
++build/asterisk-debug-doc::
+ 	mkdir -p $(BUILD_TREE)/doc/json
+ 	wazo-asterisk-doc-extractor $(BUILD_TREE)/doc/core-en_US.xml > $(BUILD_TREE)/doc/json/pjsip.json
+ 
 -install/asterisk-doc::
 +install/asterisk-debug-doc::
  	dh_installexamples -p$(cdbs_curpkg) $(BUILD_TREE)/sample.call
