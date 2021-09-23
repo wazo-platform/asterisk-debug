@@ -3,13 +3,13 @@
       - debian-packaging-template
     check:
       jobs:
-        - asterisk-debug-tox-integration
+        - asterisk-tox-integration
     gate:
       jobs:
-        - asterisk-debug-tox-integration
+        - asterisk-tox-integration
 
 - job:
-    name: asterisk-debug-tox-integration
+    name: asterisk-tox-integration
     description: Run asterisk integration tests
     parent: wazo-tox-integration
     vars:
