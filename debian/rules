@@ -11,7 +11,7 @@
 #  The "all" option enables "PIE" and "BINDNOW" and future hardening flags
 
 # uncomment the next line to create a "MALLOC_DEBUG" version of asterisk
-#MENUSELECT_EXTRA_ARGS := --enable MALLOC_DEBUG
+MENUSELECT_EXTRA_ARGS := --enable MALLOC_DEBUG
 # uncomment the next 2 lines to create a "debug" version of asterisk
 MENUSELECT_EXTRA_ARGS := --enable DONT_OPTIMIZE
 #MENUSELECT_EXTRA_ARGS += --enable DEBUG_THREADS

@@ -74,7 +74,8 @@ index 6224da3..4985f8f 100755
 +++ b/debian/rules
 @@ -13,7 +13,7 @@
  # uncomment the next line to create a "MALLOC_DEBUG" version of asterisk
- #MENUSELECT_EXTRA_ARGS := --enable MALLOC_DEBUG
+-#MENUSELECT_EXTRA_ARGS := --enable MALLOC_DEBUG
++MENUSELECT_EXTRA_ARGS := --enable MALLOC_DEBUG
  # uncomment the next 2 lines to create a "debug" version of asterisk
 -#MENUSELECT_EXTRA_ARGS := --enable DONT_OPTIMIZE
 +MENUSELECT_EXTRA_ARGS := --enable DONT_OPTIMIZE
