@@ -1,10 +1,10 @@
-asterisk-debug (8:20.4.0-1~wazo3) wazo-dev-bullseye; urgency=medium
+asterisk-debug (8:20.4.0-1~wazo4) wazo-dev-bullseye; urgency=medium
 
-  * Enable MALLOC_DEBUG
+  * rebuild
 
- -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 18 Oct 2023 09:21:24 -0400
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 18 Oct 2023 11:10:15 -0400
 
-asterisk-debug (8:20.4.0-1~wazo2) wazo-dev-bullseye; urgency=medium
+asterisk (8:20.4.0-1~wazo2) wazo-dev-bullseye; urgency=medium
 
   * Asterisk 20.4.0
 
