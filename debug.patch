@@ -78,7 +78,7 @@ index 6224da3..4985f8f 100755
 +MENUSELECT_EXTRA_ARGS := --enable MALLOC_DEBUG
  # uncomment the next 2 lines to create a "debug" version of asterisk
 -#MENUSELECT_EXTRA_ARGS := --enable DONT_OPTIMIZE
-+MENUSELECT_EXTRA_ARGS := --enable DONT_OPTIMIZE
++MENUSELECT_EXTRA_ARGS += --enable DONT_OPTIMIZE
  #MENUSELECT_EXTRA_ARGS += --enable DEBUG_THREADS
  # ...and the next line to be able to use the asterisk test framework
  #MENUSELECT_EXTRA_ARGS += --enable TEST_FRAMEWORK
