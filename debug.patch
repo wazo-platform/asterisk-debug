@@ -82,15 +82,22 @@ index 6224da3..4985f8f 100755
  #MENUSELECT_EXTRA_ARGS += --enable DEBUG_THREADS
  # ...and the next line to be able to use the asterisk test framework
  #MENUSELECT_EXTRA_ARGS += --enable TEST_FRAMEWORK
-@@ -126,7 +126,7 @@ override_dh_auto_install:
+@@ -126,7 +126,13 @@ override_dh_auto_install:
  	$(RM) -f $(CURDIR)/debian/tmp/usr/sbin/refcounter
  
  override_dh_strip:
 -	dh_strip -a --dbgsym-migration='asterisk-dbg (<< 8:20.1.0-1~wazo2.deb10)'
 +	dh_strip -a --dbgsym-migration='asterisk-debug-dbg (<< 8:20.1.0-1~wazo2.deb10)'
++
++override_dh_systemd_enable:
++	dh_systemd_enable --name=asterisk
++
++override_dh_installinit:
++	dh_installinit --name=asterisk
  
  .PHONY: get-orig-source
  
+
 diff --git a/debian/source/options b/debian/source/options
 index e624ada..e7c3749 100644
 --- a/debian/source/options
