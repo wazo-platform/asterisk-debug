@@ -1,3 +1,9 @@
+asterisk-debug (8:20.4.0-1~wazo6) wazo-dev-bullseye; urgency=medium
+
+  * add service file
+
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 25 Oct 2023 10:54:12 -0400
+
 asterisk-debug (8:20.4.0-1~wazo5) wazo-dev-bullseye; urgency=medium
 
   * fix rules file
