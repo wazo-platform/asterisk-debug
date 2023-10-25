@@ -1,16 +1,10 @@
-asterisk-debug (8:20.4.0-1~wazo6) wazo-dev-bullseye; urgency=medium
+asterisk-debug (8:20.4.0-1~wazo7) wazo-dev-bussleye; urgency=medium
 
-  * add service file
+  * rebuild
 
- -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 25 Oct 2023 10:54:12 -0400
+ -- Wazo Maintainers <dev+pkg@wazo.community>  Wed, 25 Oct 2023 15:43:13 -0400
 
-asterisk-debug (8:20.4.0-1~wazo5) wazo-dev-bullseye; urgency=medium
-
-  * fix rules file
-
- -- Wazo Maintainers <dev+pkg@wazo.community>  Thu, 19 Oct 2023 09:56:45 -0400
-
-asterisk-debug (8:20.4.0-1~wazo4) wazo-dev-bullseye; urgency=medium
+asterisk (8:20.4.0-1~wazo4) wazo-dev-bullseye; urgency=medium
 
   * rebuild
 
