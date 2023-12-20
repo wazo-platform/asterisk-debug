@@ -37,8 +37,6 @@ pipeline {
     }
   }
   post {
-    success {
-    }
     failure {
       emailext to: "${MAIL_RECIPIENTS}", subject: '${DEFAULT_SUBJECT}', body: '${DEFAULT_CONTENT}'
     }
