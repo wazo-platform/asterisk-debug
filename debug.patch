@@ -140,8 +140,8 @@ index 08c063e..8c27863 100644
 --- a/debian/source/options
 +++ b/debian/source/options
 @@ -1 +1 @@
--extend-diff-ignore = "(^|/)(\.dockerignore|AUTHORS|Dockerfile|README.md|CHANGELOG.md|LICENSE|integration_tests.*|contribs.*|zuul.yaml|tox.ini|Jenkinsfile)$"
-+extend-diff-ignore = "(^|/)(\.dockerignore|AUTHORS|Dockerfile|README.md|CHANGELOG.md|LICENSE|integration_tests.*|contribs.*|zuul.yaml|tox.ini|Jenkinsfile|debug.patch)$"
+-extend-diff-ignore = "(^|/)(\.dockerignore|AUTHORS|Dockerfile|README.md|CHANGELOG.md|LICENSE|integration_tests.*|contribs.*|zuul.yaml|tox.ini|Jenkinsfile|.lastclean)$"
++extend-diff-ignore = "(^|/)(\.dockerignore|AUTHORS|Dockerfile|README.md|CHANGELOG.md|LICENSE|integration_tests.*|contribs.*|zuul.yaml|tox.ini|Jenkinsfile|.lastclean|debug.patch)$"
 diff --git a/zuul.yaml b/zuul.yaml
 index 205e50c..6f7afe4 100644
 --- a/zuul.yaml
